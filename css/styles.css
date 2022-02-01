@@ -1,0 +1,351 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #1c1c1c;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1200px), (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+header {
+  background-color: #292929;
+  height: 4rem;
+}
+
+header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+header .ham_menu {
+  display: none;
+  margin-right: 1rem;
+  width: 16px;
+  height: auto;
+}
+
+header .logo {
+  color: white;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+header .nav_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 3rem;
+}
+
+header .nav_menu_item:not(:nth-child(1)) {
+  margin-left: 3rem;
+}
+
+header .nav_menu_link {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9em;
+}
+
+header .btn_explore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid white;
+  border-radius: 18px;
+  width: 8rem;
+  height: 2rem;
+}
+
+header .btn_explore_link {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 992px) {
+  header .nav_left {
+    margin-left: 1rem;
+  }
+  header .ham_menu {
+    display: block;
+  }
+  header .nav_menu {
+    display: none;
+  }
+  header .btn_explore {
+    margin-right: 1rem;
+  }
+}
+
+.player_section {
+  margin-bottom: 4rem;
+}
+
+.player {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.player .player_left {
+  width: 640px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.player .video_container {
+  position: relative;
+}
+
+.player .video_player {
+  width: 640px;
+  height: 360px;
+}
+
+.player .player_right {
+  width: 40%;
+  height: auto;
+}
+
+.player .player_headline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #404040;
+  width: 100%;
+  height: 3rem;
+}
+
+.player .player_headline_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.player .player_headline_title {
+  color: white;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.player .player_headline_streaming {
+  margin-left: 0.5rem;
+  width: 1.5rem;
+  height: auto;
+}
+
+.player .player_headline_share {
+  width: 1.5rem;
+  height: auto;
+  margin-right: 0.5rem;
+}
+
+.player .player_collection {
+  width: 100%;
+}
+
+.player .player_next {
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.player .player_next_title {
+  color: white;
+  font-size: 1rem;
+}
+
+.player .player_list {
+  margin-left: 0.5rem;
+}
+
+.player .player_list_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3rem;
+  border-bottom: 1px solid #404040;
+}
+
+.player .player_list_time {
+  color: white;
+  font-size: 0.8rem;
+  width: 30%;
+}
+
+.player .player_list_title {
+  color: white;
+  font-size: 0.8rem;
+  width: 70%;
+}
+
+@media (max-width: 1200px) {
+  .player_section {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .player_section .player_right {
+    width: 30%;
+  }
+}
+
+@media (max-width: 992px) {
+  .player_section .player {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .player_section .player_right {
+    width: 100%;
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 639px) {
+  .player_section {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .player_section .player {
+    max-width: 100%;
+  }
+  .player_section .player_left {
+    width: 100%;
+  }
+  .player_section .video_container {
+    width: 100%;
+    height: auto;
+  }
+  .player_section .video_player {
+    width: 100%;
+    height: auto;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

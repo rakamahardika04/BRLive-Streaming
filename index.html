@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>BR LIVE</title>
+</head>
+
+<body onload="videoControl()">
+
+    <!-- NAVBAR -->
+    <header class="nav_section">
+
+        <!-- NAV CONTAINER -->
+        <nav class="nav container">
+
+            <!-- NAV LEFT -->
+            <div class="nav_left">
+                <img class="ham_menu" src="./images/icon-menu.svg" alt="menu">
+                <span class="logo">BRLive</span>
+                <ul class="nav_menu">
+                    <li class="nav_menu_item">
+                        <a class="nav_menu_link" href="#">HOME</a>
+                    </li>
+                    <li class="nav_menu_item">
+                        <a class="nav_menu_link" href="#">LIVE STREAMING</a>
+                    </li>
+                    <li class="nav_menu_item">
+                        <a class="nav_menu_link" href="#">PROGRAM</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- NAV RIGHT -->
+            <div class="nav_right">
+                <!-- BTN EXPLORE -->
+                <div class="btn_explore">
+                    <a class="btn_explore_link" href="#">Explore</a>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="player_section">
+        <!-- PLAYER -->
+        <div class="player container">
+            <!-- PLAYER LEFT -->
+            <div class="player_left">
+                <div id="videoContainer" class="video_container">
+                    <video id="videoPlayer" class="video_player" controls>
+                        <source src='https://www.w3schools.com/html/mov_bbb.mp4' type='video/mp4'>
+                        <source src='https://www.w3schools.com/html/mov_bbb.ogg' type='video/ogg'>
+                    </video>
+                    <!-- VIDEO OPTION -->
+                    <!-- <div class="video_option">
+                        <img class="video_btn_play" src="./images/icon-play.png" alt="play">
+                        <img class="video_btn_expand" src="./images/icon-expand.png" alt="expand">
+                    </div> -->
+                </div>
+            </div>
+            <!-- PLAYER RIGHT -->
+            <div class="player_right">
+                <!-- PLAYER HEADLINE -->
+                <div class="player_headline">
+                    <div class="player_headline_box">
+                        <img class="player_headline_streaming" src="./images/icon-streaming.png" alt="streaming">
+                        <span class="player_headline_title">Ikatan Cinta</span>
+                    </div>
+                    <img class="player_headline_share" src="./images/icon-share.png" alt="share">
+                </div>
+                <!-- PLAYER COLLECTION -->
+                <div class="player_collection">
+                    <!-- PLAYER NEXT -->
+                    <div class="player_next">
+                        <span class="player_next_title">Next</span>
+                    </div>
+                    <ul class="player_list">
+                        <li class="player_list_item">
+                            <span class="player_list_time">21:30 - 23:00</span>
+                            <span class="player_list_title">Dunia Kebalik</span>
+                        </li>
+                        <li class="player_list_item">
+                            <span class="player_list_time">23:00 - 00:00</span>
+                            <span class="player_list_title">Cewek Global Warming</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
